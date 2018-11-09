@@ -3,4 +3,34 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#000">
+            <ImageView
+                android:id="@+id/title_selectCity_back"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/selectcity_back"/>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/title_selectCity_back"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/title_selectCity_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="当前城市:天津"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
