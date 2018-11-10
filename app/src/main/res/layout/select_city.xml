@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<<<<<<< HEAD
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#fff">
         <RelativeLayout
+            android:id="@+id/selectcity_title"
             android:layout_width="fill_parent"
             android:layout_height="45dp"
             android:background="#000">
@@ -32,8 +32,16 @@
                 android:textSize="25sp"
                 android:gravity="center"/>
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/selectcity_title">
+            <ListView
+                android:id="@+id/selectcity_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </RelativeLayout>
     </RelativeLayout>
 
-=======
->>>>>>> eae34a39e93af0633c2e455b94741b99433fa9f1
 </android.support.constraint.ConstraintLayout>

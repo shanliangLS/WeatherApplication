@@ -25,10 +25,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ImageView updateBtn;
     private ImageView SelectCityBtn;
 
+    private String updateCityCode;
+
     // todayWeather
     private TextView tCityName,tCity,tTime,tHumidity,tWeek,tPmData,tPmQuality,tTemperature,tClimate,tWind;
     private ImageView weatherImg,pm25Img;
 
+    // 用handler启动更新
     private Handler mHandler = new Handler() {
         public void handleMessage(android.os.Message message) {
             switch (message.what) {
@@ -68,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // 点击按钮事件
     public void onClick(View v) {
         if (v.getId() == R.id.nav_update) {
-            getWeatherDatafromNet("101010100");
+            getWeatherDatafromNet("101030100");
         }
         if (v.getId() == R.id.nav_manager) {
             Intent intent = new Intent(this,SelectCity.class);
@@ -114,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tPmData.setText(todayWeather.getPm25());
         tPmQuality.setText(todayWeather.getQuality());
         tWeek.setText(todayWeather.getDate());
-        tTemperature.setText(todayWeather.getHigh() + "~" + todayWeather.getLow());
+        tTemperature.setText(todayWeather.getLow() + "~" + todayWeather.getHigh());
         tClimate.setText(todayWeather.getType());
         tWind.setText("风力" + todayWeather.getFengli());
         if (todayWeather.getPm25() != null) {
