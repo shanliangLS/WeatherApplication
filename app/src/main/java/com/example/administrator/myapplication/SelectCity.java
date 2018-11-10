@@ -1,5 +1,6 @@
 package com.example.administrator.myapplication;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,4 +28,7 @@ public class SelectCity extends Activity implements View.OnClickListener {
                 break;
         }
     }
+=======
+public class SelectCity {
+>>>>>>> eae34a39e93af0633c2e455b94741b99433fa9f1
 }

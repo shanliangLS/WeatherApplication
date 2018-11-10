@@ -1,6 +1,7 @@
 package com.example.administrator.myapplication;
 
 public class TodayWeather {
+<<<<<<< HEAD
     public String getCity() {
         return city;
     }
@@ -116,4 +117,6 @@ public class TodayWeather {
     private String high;
     private String low;
     private String type;
+=======
+>>>>>>> eae34a39e93af0633c2e455b94741b99433fa9f1
 }

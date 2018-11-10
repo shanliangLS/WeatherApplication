@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<<<<<<< HEAD
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,4 +34,6 @@
         </RelativeLayout>
     </RelativeLayout>
 
+=======
+>>>>>>> eae34a39e93af0633c2e455b94741b99433fa9f1
 </android.support.constraint.ConstraintLayout>
